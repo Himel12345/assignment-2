@@ -29,6 +29,7 @@ body {
     display: flex;
     align-items: center;
 
+
 }
 
 .nav-list ul li {
@@ -36,6 +37,22 @@ body {
     font-weight: 500;
     font-size: 18px;
     color: #424242;
+    cursor: pointer;
+}
+
+.nav-list ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f48836;
+    display: block;
+
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-list ul li:hover::after {
+    width: 100%;
 }
 
 /* main header started */
@@ -63,6 +80,11 @@ body {
     background: #FF900E;
     border-radius: 8px;
     color: aliceblue;
+    transition: 0.5s;
+}
+
+.main-btn:hover {
+    background-color: #a75414;
 }
 
 /* banner started */
@@ -126,3 +148,209 @@ h3 .three {
 }
 
 /* 1st main end  */
+/* 2nd main started */
+.secondd-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 120px;
+    gap: 95px;
+
+}
+
+
+
+.secondmain-text {
+    margin-left: 5px;
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+}
+
+.secondmain-p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+.secondmain-secondtext {
+    margin-left: 20px;
+    padding: 15px;
+}
+
+.secondmain-secondtext h5 {
+    font-weight: 600;
+    font-size: 17px;
+    color: #131313;
+
+
+}
+
+.secondmain-secondtext p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
+    padding-top: -20px;
+
+}
+
+
+
+.second-main-img img {
+    margin-top: 50px;
+    width: 600px;
+    height: 920px;
+}
+
+.main-btn.boton {
+    width: 200px;
+    height: 130px;
+    margin: -100px;
+    overflow-y: 190px;
+
+}
+
+.main-btn.boton h2 {
+    font-weight: 700;
+    font-size: 25px;
+    color: #FFFFFF;
+
+}
+
+.main-btn.boton p {
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+
+}
+
+.main-btn.boton {
+
+    margin-bottom: 5px;
+}
+
+/* 2nd section ended */
+
+/* 3rd section started */
+
+.title-third {
+    margin-top: 38px;
+    margin-left: 120px;
+}
+
+.title-third h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #131313;
+    margin-bottom: -10px;
+}
+
+.title-third p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #727272;
+}
+
+.box-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 80px;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.box-detail {
+    width: 220px;
+    height: 220px;
+    box-sizing: border-box;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    transition-duration: 1s;
+}
+
+.box-detail:hover {
+    transform: rotate(360deg);
+}
+
+.box-detail img {
+    padding-top: 45px;
+    width: 40px;
+    height: 40px;
+}
+
+.box-detail h2 {
+    font-weight: 600;
+    color: #424242;
+
+}
+
+.box-detail p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #727272;
+
+}
+
+/* 3rd section ended */
+/* 4th section started */
+.forth-title {
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.forth-title h2 {
+    font-weight: 700;
+    color: #131313;
+}
+
+.forth-title p {
+    font-weight: 400;
+    font-size: 13px;
+    color: #727272;
+}
+
+.forth-img {
+    display: flex;
+    gap: 90px;
+    margin: 100px 180px;
+}
+
+.forth-img img {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.forth-img img:hover {
+    filter: grayscale(0%);
+}
+
+/* 4th section ended */
+
+/* footer started */
+.footer {
+    width: 1165px;
+    height: 55px;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 8px;
+    background-color: #f3e3cf;
+    align-items: center;
+    text-align: center;
+    margin: 120px 90px 60px;
+    padding: 2px;
+}
+
+.footer p {
+    font-weight: 400;
+    font-size: 13px;
+    color: #424242;
+}
+/* footer ended */
